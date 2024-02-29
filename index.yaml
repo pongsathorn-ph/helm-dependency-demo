@@ -254,18 +254,22 @@ entries:
       version: 1.0.0
   ioc:
     - apiVersion: v2
-      appVersion: 1.0.0
-      created: "2024-02-15T13:25:08.6469191+07:00"
+      appVersion: 0.0.1
+      created: "2024-02-15T13:22:49.0767027+07:00"
       dependencies:
         - condition: chart-bg-schedule.enabled
-          name: ioc-ui-chart
-          repository: https://pongsathorn-ph.github.io/ioc-ui/helm-chart/
-          version: "2024.02.00-0002-ALPHA"
+          name: chart-bg-schedule
+          repository: https://pongsathorn-ph.github.io/chart-bg-schedule/
+          version: 1.0.0
+        - condition: chart-bg-thread.enabled
+          name: chart-bg-thread
+          repository: https://pongsathorn-ph.github.io/chart-bg-thread/
+          version: 1.0.0
       description: A Helm chart for Kubernetes
-      digest: 88bbb32af0d3194735af0959ef6e4208f7fa19e67be8bb1023941662aead7cca
-      name: ioc
+      digest: 66dc2292aa95be5bbe082a4d91c6fcbb3f728557f1542e9f44b3aaf165cee40c
+      name: chart-c
       type: application
       urls:
-        - assets/chart-c/chart-c-3.0.0.tgz
-      version: "2024.02.00-0006-ALPHA"
+        - assets/chart-c/chart-c-1.0.0.tgz
+      version: 1.0.0
 generated: "2024-02-15T13:25:08.6463538+07:00"
