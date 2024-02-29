@@ -271,5 +271,5 @@ entries:
       type: application
       urls:
         - assets/chart-c/chart-c-1.0.0.tgz
-      version: 2024.02.00
+      version: 2024.02.00-alpha
 generated: "2024-02-15T13:25:08.6463538+07:00"
