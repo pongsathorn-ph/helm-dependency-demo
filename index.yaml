@@ -262,8 +262,8 @@ entries:
           repository: https://pongsathorn-ph.github.io/chart-bg-schedule/
           version: 1.0.0
         - condition: chart-bg-thread.enabled
-          name: chart-bg-thread
-          repository: https://pongsathorn-ph.github.io/chart-bg-thread/
+          name: ioc-ui-chart
+          repository: https://pongsathorn-ph.github.io/ioc-ui/helm-chart/
           version: 1.0.0
       description: A Helm chart for Kubernetes
       digest: 66dc2292aa95be5bbe082a4d91c6fcbb3f728557f1542e9f44b3aaf165cee40c
