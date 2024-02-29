@@ -1,0 +1,23 @@
+apiVersion: v2
+name: chart-b
+description: A Helm chart for Kubernetes
+type: application
+version: 5.0.0
+appVersion: "0.0.1"
+dependencies:
+  - name: chart-api
+    condition: chart-api.enabled
+    repository: "file://charts/chart-api/"
+    version: 1.0.0
+  - name: chart-ui
+    condition: chart-ui.enabled
+    repository: "file://charts/chart-ui/"
+    version: 1.0.0
+  - name: chart-bg-schedule
+    condition: chart-bg-schedule.enabled
+    repository: "https://pongsathorn-ph.github.io/chart-bg-schedule/"
+    version: 2.0.0
+  - name: chart-bg-thread
+    condition: chart-bg-thread.enabled
+    repository: "https://pongsathorn-ph.github.io/chart-bg-thread/"
+    version: 2.0.0

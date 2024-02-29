@@ -1,0 +1,22 @@
+apiVersion: cert-manager.io/v1
+kind: Issuer
+metadata:
+  # Name of issuer, this example use png-api-staging
+  name: {{ .Values.issuer.name }}
+  namespace: {{ .Release.Namespace | quote }}
+spec:
+  acme:
+    # The ACME server URL
+    server: {{ .Values.issuer.spec.acme.server }}
+    # Email address used for ACME registration
+    email: {{ .Values.issuer.spec.acme.email }}
+    # Name of a secret used to store the ACME account private key, this example use png-api-staging
+    privateKeySecretRef:
+      name: {{ .Values.issuer.name }}
+    # Enable the HTTP-01 challenge provider
+    solvers:
+    # An empty 'selector' means that this solver matches all domains
+    - selector: {}
+      http01:
+        ingress:
+          class: nginx

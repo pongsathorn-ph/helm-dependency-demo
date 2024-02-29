@@ -1,0 +1,15 @@
+dependencies:
+- name: chart-api
+  repository: file://charts/chart-api/
+  version: 1.0.0
+- name: chart-ui
+  repository: file://charts/chart-ui/
+  version: 1.0.0
+- name: chart-bg-schedule
+  repository: https://pongsathorn-ph.github.io/chart-bg-schedule/
+  version: 2.0.0
+- name: chart-bg-thread
+  repository: https://pongsathorn-ph.github.io/chart-bg-thread/
+  version: 2.0.0
+digest: sha256:44019f9a7a1c8b204042c45e9172f7284a352085a0515b57d8de4a3b4d79bf72
+generated: "2024-02-15T11:30:47.8438867+07:00"

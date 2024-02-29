@@ -1,0 +1,4 @@
+chart-api:
+  enabled: false
+chart-ui:
+  enabled: true

@@ -1,0 +1,9 @@
+dependencies:
+- name: chart-bg-schedule
+  repository: https://pongsathorn-ph.github.io/chart-bg-schedule/
+  version: 2.0.0
+- name: chart-bg-thread
+  repository: https://pongsathorn-ph.github.io/chart-bg-thread/
+  version: 2.0.0
+digest: sha256:4cc491cca4bd7d696810354cfdd5a861becd8bb92ecbcc63b683db475aa905cc
+generated: "2024-02-15T13:24:58.3072702+07:00"

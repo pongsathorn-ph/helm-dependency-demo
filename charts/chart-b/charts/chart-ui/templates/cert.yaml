@@ -1,0 +1,32 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    # Name of issuer, this example use png-api-staging, please see [Cert Manager › Issuers]
+    cert-manager.io/issuer: {{ .Values.issuer.name }}
+  # Name of ingress service, this example use ingress-userapi
+  name: {{ .Values.ingress.name }}
+  namespace: {{ .Release.Namespace | quote }}
+spec:
+  ingressClassName: nginx
+  rules:
+  # URL, this example use userapi.3.ipv9.xyz
+  - host: {{ .Values.ingress.host }}
+    http:
+      paths:
+      - backend:
+          service:
+            # Name of service, this example use userapi, please see [Service Discovery › Service]
+            name: {{ .Values.service.name }}
+            port:
+              # Port of service, this example use 7777, please see [Service Discovery › Service]
+              number: 80
+        path: {{ .Values.ingress.http.path }}
+        pathType: {{ .Values.ingress.http.pathType }}
+  tls:
+  - hosts:
+    # URL, this example use userapi.3.ipv9.xyz
+    - {{ .Values.ingress.host }}
+
+    # Name of a secret used to store, this example use userapi-3-ipv9-xyz-staging-tls
+    secretName: "{{ .Values.app.name }}-ipv9-xyz-staging-tls"

@@ -1,0 +1,29 @@
+configmap:
+  name: chart-ui-configmap
+
+app:
+  namespace: beam-namespace
+  name: chart-ui-app
+  replicas: 2
+  image:
+    repository: pongsathorn/png-iapi
+    version: 1.0.0
+        
+service:
+  name: chart-ui-service
+  port: 80
+  targetPort: 80
+
+issuer:
+  name: chart-ui-issuer
+  spec:
+    acme:
+      server: https://acme-staging-v02.api.letsencrypt.org/directory
+      email: pongsathorn.p@somapait.com
+
+ingress:
+  name: chart-ui-ingress
+  host: chart-ui.3.ipv9.xyz
+  http:
+    path: /demo-ui/
+    pathType: Prefix

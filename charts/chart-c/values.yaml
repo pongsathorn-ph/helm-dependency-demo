@@ -1,0 +1,4 @@
+chart-bg-thread:
+  enabled: true
+chart-bg-schedule:
+  enabled: true

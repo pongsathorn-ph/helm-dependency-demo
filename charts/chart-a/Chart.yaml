@@ -1,0 +1,15 @@
+apiVersion: v2
+name: chart-a
+description: A Helm chart for Kubernetes
+type: application
+version: 3.0.0
+appVersion: "0.0.1"
+dependencies:
+  - name: chart-ui
+    condition: chart-ui.enabled
+    repository: "file://charts/chart-ui/"
+    version: 2.0.0
+  - name: chart-api
+    condition: chart-api.enabled
+    repository: "file://charts/chart-api/"
+    version: 2.0.0

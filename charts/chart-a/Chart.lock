@@ -1,0 +1,9 @@
+dependencies:
+- name: chart-ui
+  repository: file://charts/chart-ui/
+  version: 2.0.0
+- name: chart-api
+  repository: file://charts/chart-api/
+  version: 2.0.0
+digest: sha256:21c715dd6b851d58f263fb816a01bf9ea77ad2dbfb665ed1cec1bed476e18670
+generated: "2024-02-15T13:39:52.7353012+07:00"
