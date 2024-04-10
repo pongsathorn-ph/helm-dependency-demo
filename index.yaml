@@ -196,26 +196,6 @@ entries:
     version: 1.0.0
   chart-c:
   - apiVersion: v2
-    appVersion: 0.0.1-0003
-    created: "2024-04-10T11:48:50.3402782+07:00"
-    description: A Helm chart for Kubernetes
-    digest: 72cd0aff595ee778a5f04f9f7f28c18cffdff41f3113e48d3380cf5af5e6afe9
-    name: chart-c
-    type: application
-    urls:
-    - https://git.dev.sit/api/v4/projects/40/packages/generic/143/package_files/bcc-2024.4.0-0005-ALPHA.tgz
-    version: 6.0.0
-  - apiVersion: v2
-    appVersion: 0.0.1-0002
-    created: "2024-04-10T11:26:03.546252+07:00"
-    description: A Helm chart for Kubernetes
-    digest: cbfb408c87f30c2ed6edd03edcedc83d8ebe2934ddd2a29cb52acfe87fc849e6
-    name: chart-c
-    type: application
-    urls:
-    - https://git.dev.sit/api/v4/projects/40/packages/generic/143/package_files/bcc-2024.4.0-0005-ALPHA.tgz
-    version: 5.0.0
-  - apiVersion: v2
     appVersion: 0.0.1-0001
     created: "2024-04-10T10:33:07.5074753+07:00"
     description: A Helm chart for Kubernetes
