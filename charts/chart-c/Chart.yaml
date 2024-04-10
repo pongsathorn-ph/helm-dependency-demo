@@ -2,6 +2,6 @@ apiVersion: v2
 name: chart-c
 description: A Helm chart for Kubernetes
 type: application
-version: 5.0.0
-appVersion: "0.0.1-0002"
+version: 6.0.0
+appVersion: "0.0.1-0003"
 
