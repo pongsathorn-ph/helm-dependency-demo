@@ -226,16 +226,6 @@ entries:
     version: 3.0.0
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2024-04-10T09:37:09.946139+07:00"
-    description: A Helm chart for Kubernetes
-    digest: 5f1bb9c2d490b2fe6dc5ae6cdf149a8ba7323d6e6cba50357448d8b8f2932b9c
-    name: chart-c
-    type: application
-    urls:
-    - assets/chart-c/chart-c-3.0.0-alpha.1.tgz
-    version: 3.0.0-alpha.1
-  - apiVersion: v2
-    appVersion: 0.0.1
     created: "2024-02-15T13:24:34.9956148+07:00"
     dependencies:
     - condition: chart-bg-schedule.enabled
@@ -272,4 +262,4 @@ entries:
     urls:
     - assets/chart-c/chart-c-1.0.0.tgz
     version: 1.0.0
-generated: "2024-04-10T09:45:47.5394028+07:00"
+generated: "2024-04-10T09:53:57.7338124+07:00"
