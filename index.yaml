@@ -196,6 +196,16 @@ entries:
     version: 1.0.0
   chart-c:
   - apiVersion: v2
+    appVersion: 0.0.1-0004
+    created: "2024-04-10T13:50:19.5731096+07:00"
+    description: A Helm chart for Kubernetes
+    digest: fce1765947569b0bb99dcd91c2a8708858726f47fdf2899ee7b562fe41c81430
+    name: chart-c
+    type: application
+    urls:
+    - https://git.dev.sit/api/v4/projects/52/packages/generic/192/package_files/chart-c-6.0.0.tgz
+    version: 7.0.0
+  - apiVersion: v2
     appVersion: 0.0.1-0001
     created: "2024-04-10T10:33:07.5074753+07:00"
     description: A Helm chart for Kubernetes
@@ -262,4 +272,4 @@ entries:
     urls:
     - assets/chart-c/chart-c-1.0.0.tgz
     version: 1.0.0
-generated: "2024-04-10T11:48:50.3402782+07:00"
+generated: "2024-04-10T13:50:19.5721097+07:00"
